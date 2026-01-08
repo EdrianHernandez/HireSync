@@ -1,17 +1,11 @@
-
 import React from 'react';
-import { Job } from '../types';
 import { getAIJobInsight } from '../services/geminiService';
 
-interface JobFeedProps {
-  jobs: Job[];
-}
+const JobFeed = ({ jobs }) => {
+  const [insightLoading, setInsightLoading] = React.useState(null);
+  const [activeInsight, setActiveInsight] = React.useState(null);
 
-const JobFeed: React.FC<JobFeedProps> = ({ jobs }) => {
-  const [insightLoading, setInsightLoading] = React.useState<string | null>(null);
-  const [activeInsight, setActiveInsight] = React.useState<{ id: string; text: string } | null>(null);
-
-  const handleAIInsight = async (job: Job) => {
+  const handleAIInsight = async (job) => {
     if (activeInsight?.id === job.id) {
       setActiveInsight(null);
       return;
