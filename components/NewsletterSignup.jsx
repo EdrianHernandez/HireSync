@@ -1,11 +1,10 @@
-
 import React from 'react';
 
-const NewsletterSignup: React.FC = () => {
+const NewsletterSignup = () => {
   const [email, setEmail] = React.useState('');
-  const [status, setStatus] = React.useState<'idle' | 'success'>('idle');
+  const [status, setStatus] = React.useState('idle');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     if (email) {
       setStatus('success');
