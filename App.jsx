@@ -1,14 +1,12 @@
-
 import React, { useState, useMemo } from 'react';
 import { MOCK_JOBS, MOCK_COMPANIES } from './constants';
-import { SearchFilters } from './types';
 import JobSearchHero from './components/JobSearchHero';
 import JobFeed from './components/JobFeed';
 import CompanySpotlight from './components/CompanySpotlight';
 import NewsletterSignup from './components/NewsletterSignup';
 
-const App: React.FC = () => {
-  const [filters, setFilters] = useState<SearchFilters>({ title: '', location: '' });
+const App = () => {
+  const [filters, setFilters] = useState({ title: '', location: '' });
 
   const filteredJobs = useMemo(() => {
     return MOCK_JOBS.filter(job => {
@@ -19,7 +17,7 @@ const App: React.FC = () => {
     });
   }, [filters]);
 
-  const handleSearch = (newFilters: SearchFilters) => {
+  const handleSearch = (newFilters) => {
     setFilters(newFilters);
   };
 
