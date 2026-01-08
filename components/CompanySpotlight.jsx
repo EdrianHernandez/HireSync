@@ -1,12 +1,6 @@
-
 import React from 'react';
-import { Company } from '../types';
 
-interface CompanySpotlightProps {
-  companies: Company[];
-}
-
-const CompanySpotlight: React.FC<CompanySpotlightProps> = ({ companies }) => {
+const CompanySpotlight = ({ companies }) => {
   return (
     <div className="bg-white rounded-lg border border-gray-200 p-6 sticky top-24">
       <div className="flex items-center justify-between mb-4">
