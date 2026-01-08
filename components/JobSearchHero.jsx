@@ -1,16 +1,10 @@
-
 import React from 'react';
-import { SearchFilters } from '../types';
 
-interface JobSearchHeroProps {
-  onSearch: (filters: SearchFilters) => void;
-}
-
-const JobSearchHero: React.FC<JobSearchHeroProps> = ({ onSearch }) => {
+const JobSearchHero = ({ onSearch }) => {
   const [title, setTitle] = React.useState('');
   const [location, setLocation] = React.useState('');
 
-  const handleSearch = (e: React.FormEvent) => {
+  const handleSearch = (e) => {
     e.preventDefault();
     onSearch({ title, location });
   };
