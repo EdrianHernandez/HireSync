@@ -21,7 +21,7 @@ const JobSearchHero = ({ onSearch }) => {
           </p>
         </div>
 
-        <form onSubmit={handleSearch} className="search-bar max-w-4xl mx-auto flex flex-col md:flex-row gap-2 p-2 bg-white rounded-xl shadow-lg border border-gray-100">
+        <form onSubmit={handleSearch} className="search-bar max-w-4xl mx-auto flex flex-col md:flex-col gap-2 p-2 bg-white rounded-xl shadow-lg border border-gray-100">
           <div className="flex-1 flex items-center px-4 py-2 border-b md:border-b-0 md:border-r border-gray-100">
             <svg className="h-5 w-5 text-gray-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />

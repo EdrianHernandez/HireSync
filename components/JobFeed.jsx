@@ -30,13 +30,13 @@ const JobFeed = ({ jobs }) => {
         </div>
       ) : (
         jobs.map((job) => (
-          <div key={job.id} className="job-listing group bg-white p-5 rounded-lg border border-gray-200 job-card-shadow transition-all duration-200">
+          <div key={job.id} className="job-listing group bg-white p-0 rounded-lg border border-gray-200 job-card-shadow transition-all duration-200">
             <div className="flex items-start gap-4">
               <img src={job.companyLogo} alt={job.company} className="w-12 h-12 rounded bg-gray-100 object-cover" />
               <div className="flex-1">
                 <div className="flex justify-between items-start">
                   <div>
-                    <h3 className="text-lg font-bold text-gray-900 group-hover:text-indigo-600 transition-colors">
+                    <h3 className="text-xs font-light text-gray-400 group-hover:text-indigo-600 transition-colors">
                       {job.title}
                     </h3>
                     <p className="text-indigo-600 font-medium">{job.company}</p>

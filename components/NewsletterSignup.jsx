@@ -21,7 +21,7 @@ const NewsletterSignup = () => {
         </p>
         
         {status === 'success' ? (
-          <div className="bg-green-500 text-white p-4 rounded-lg animate-bounce inline-block">
+          <div className="bg-green-500 text-white p-4 rounded-lg animate-bounce inline-block absolute -top-20 -left-96">
             Awesome! Check your inbox for confirmation.
           </div>
         ) : (

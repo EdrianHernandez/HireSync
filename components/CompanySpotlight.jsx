@@ -9,7 +9,7 @@ const CompanySpotlight = ({ companies }) => {
       </div>
       <div className="space-y-6">
         {companies.map((company) => (
-          <div key={company.id} className="flex items-center gap-4 group cursor-pointer">
+          <div key={company.id} className="flex items-center gap-4 group cursor-pointer opacity-0">
             <img src={company.logo} alt={company.name} className="w-12 h-12 rounded-lg border border-gray-100 group-hover:scale-105 transition-transform" />
             <div className="flex-1">
               <h3 className="text-sm font-bold text-gray-900 group-hover:text-indigo-600 transition-colors">{company.name}</h3>
