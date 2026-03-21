@@ -1,0 +1,74 @@
+[
+    {
+        "github_repo": "https://github.com/EdrianHernandez/HireSync.git",
+        "file_path": "App.jsx",
+        "image_anchor": "HireSync_bug-1.png",
+        "text_anchors": [
+            "The navigation bar is getting hidden behind other content on the page.",
+            "Elements are rendering on top of the navigation because the stacking order is incorrect.",
+            "I cannot click on navigation links because they are covered by other elements."
+        ],
+        "positive_node": "<nav className=\"bg-white border-b border-gray-200 sticky top-0 z-0\">",
+        "playwright_selector": "nav.border-b"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/HireSync.git",
+        "file_path": "components/JobSearchHero.jsx",
+        "image_anchor": "HireSync_bug-2.png",
+        "text_anchors": [
+            "The search form looks weird on larger screens - the inputs are stacking instead of stretching across.",
+            "The search inputs are displaying vertically on medium and larger screens instead of side-by-side.",
+            "The search interface is unusable on desktop because the search field takes up too much vertical space."
+        ],
+        "positive_node": "<form onSubmit={handleSearch} className=\"search-bar max-w-4xl mx-auto flex flex-col md:flex-col gap-2 p-2 bg-white rounded-xl shadow-lg border border-gray-100\">",
+        "playwright_selector": "form.search-bar"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/HireSync.git",
+        "file_path": "components/JobFeed.jsx",
+        "image_anchor": "HireSync_bug-3.png",
+        "text_anchors": [
+            "The job titles look really hard to read - they're too small and faint.",
+            "The job title text has reduced font weight and size, and the color contrast is too low.",
+            "I cannot clearly read the job titles in the list because they are too small and dim."
+        ],
+        "positive_node": "<h3 className=\"text-xs font-light text-gray-400 group-hover:text-indigo-600 transition-colors\">",
+        "playwright_selector": ".job-listing h3"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/HireSync.git",
+        "file_path": "components/JobFeed.jsx",
+        "image_anchor": "HireSync_bug-4.png",
+        "text_anchors": [
+            "The content inside each job card is crammed right up against the border with no breathing room.",
+            "The job card container has no internal padding, causing content to overlap and appear misaligned.",
+            "The job listings are unreadable because the content is crowded against the edges."
+        ],
+        "positive_node": "<div key={job.id} className=\"job-listing group bg-white p-0 rounded-lg border border-gray-200 job-card-shadow transition-all duration-200\">",
+        "playwright_selector": ".job-listing"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/HireSync.git",
+        "file_path": "components/CompanySpotlight.jsx",
+        "image_anchor": "HireSync_bug-5.png",
+        "text_anchors": [
+            "The company names and information in the sidebar are invisible.",
+            "The company spotlight items have zero opacity and are completely transparent.",
+            "I cannot see the company spotlight information at all because the items are not visible."
+        ],
+        "positive_node": "<div key={company.id} className=\"flex items-center gap-4 group cursor-pointer opacity-0\">",
+        "playwright_selector": "div.flex.items-center.gap-4.group.cursor-pointer"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/HireSync.git",
+        "file_path": "components/NewsletterSignup.jsx",
+        "image_anchor": "HireSync_bug-6.png",
+        "text_anchors": [
+            "After subscribing, the confirmation message appears way off the screen and I can't see it.",
+            "The success message is positioned with absolute positioning far outside the viewport.",
+            "I never see the newsletter confirmation message because it is positioned off-screen and I cannot confirm the subscription worked."
+        ],
+        "positive_node": "<div className=\"bg-green-500 text-white p-4 rounded-lg animate-bounce inline-block absolute -top-20 -left-96\">",
+        "playwright_selector": "div.bg-green-500.animate-bounce.absolute"
+    }
+]

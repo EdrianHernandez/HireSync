@@ -1,0 +1,44 @@
+[
+    {
+        "github_repo": "https://github.com/EdrianHernandez/HireSync.git",
+        "image_anchor": "HireSync_bug-1.png",
+        "file_path": "App.jsx",
+        "text_anchor": "I cannot click on navigation links because they are covered by other elements.",
+        "positive_node": "<nav className=\"bg-white border-b border-gray-200 sticky top-0 z-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/HireSync.git",
+        "image_anchor": "HireSync_bug-2.png",
+        "file_path": "components/JobSearchHero.jsx",
+        "text_anchor": "The search interface is unusable on desktop because the search field takes up too much vertical space.",
+        "positive_node": "<form onSubmit={handleSearch} className=\"search-bar max-w-4xl mx-auto flex flex-col md:flex-col gap-2 p-2 bg-white rounded-xl shadow-lg border border-gray-100\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/HireSync.git",
+        "image_anchor": "HireSync_bug-3.png",
+        "file_path": "components/JobFeed.jsx",
+        "text_anchor": "I cannot clearly read the job titles in the list because they are too small and dim.",
+        "positive_node": "<h3 className=\"text-xs font-light text-gray-400 group-hover:text-indigo-600 transition-colors\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/HireSync.git",
+        "image_anchor": "HireSync_bug-4.png",
+        "file_path": "components/JobFeed.jsx",
+        "text_anchor": "The job listings are unreadable because the content is crowded against the edges.",
+        "positive_node": "<div key={job.id} className=\"job-listing group bg-white p-0 rounded-lg border border-gray-200 job-card-shadow transition-all duration-200\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/HireSync.git",
+        "image_anchor": "HireSync_bug-5.png",
+        "file_path": "components/CompanySpotlight.jsx",
+        "text_anchor": "I cannot see the company spotlight information at all because the items are not visible.",
+        "positive_node": "<div key={company.id} className=\"flex items-center gap-4 group cursor-pointer opacity-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/HireSync.git",
+        "image_anchor": "HireSync_bug-6.png",
+        "file_path": "components/NewsletterSignup.jsx",
+        "text_anchor": "I never see the newsletter confirmation message because it is positioned off-screen and I cannot confirm the subscription worked.",
+        "positive_node": "<div className=\"bg-green-500 text-white p-4 rounded-lg animate-bounce inline-block absolute -top-20 -left-96\">"
+    }
+]
